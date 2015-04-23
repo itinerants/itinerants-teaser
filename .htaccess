@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>  
+RewriteEngine on  
+RewriteRule ^ver2 /index2.html
+RewriteRule ^ver1 /index.html
+</IfModule>
