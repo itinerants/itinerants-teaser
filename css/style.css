@@ -25,3 +25,16 @@ html, body, body * {
 	background-repeat: no-repeat;
 	background-image: url(../images/bgbig.jpg);
 }
+
+#tubular-container {
+	opacity: 0;
+
+    -webkit-transition: opacity 1500ms ease-out 1s;
+    -moz-transition: opacity 1500ms ease-out 1s;
+    -o-transition: opacity 1500ms ease-out 1s;
+    transition: opacity 1500ms ease-out 1s;
+}
+
+#tubular-container.show {
+	opacity: 1;
+}

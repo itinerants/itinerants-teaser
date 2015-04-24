@@ -9,5 +9,15 @@
 
 	any bug and issue, contact : tech.team@itinerants.co /abby@itinerants.co /  abby.s.nugraha@gmail.com
 */
+$(document).ready(function(){
 
-$('.bgbig').tubular({videoId: 'cauCoaJWNyU'});
+	//$('.videoholder').show();
+	$('#videoholder').tubular({videoId: 'oarHXlGGnWU'});
+
+});
+
+$(window).load(function(){
+
+	$('#tubular-container').addClass('show');
+
+});
