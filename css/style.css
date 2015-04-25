@@ -15,8 +15,23 @@ html, body, body * {
 	background-color: transparent;
 }
 
+.container-fluid {
+	height: 100%;
+	padding: 5% 15px;
+}
+
+.logo-container {
+	padding: 0 10%;
+}
+
+.logo-container img {
+	width: 100%;
+}
+
 .bgbig {
 	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
@@ -24,6 +39,22 @@ html, body, body * {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-image: url(../images/bgbig.jpg);
+}
+
+.bgtransparent {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	background-repeat: repeat;
+	background-image: url(../images/tranparent.png);
+}
+
+.rgba .bgtransparent {
+	background-color: rgba(0,0,0,.6);
+	background-image: none;
 }
 
 #tubular-container {
