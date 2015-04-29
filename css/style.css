@@ -83,6 +83,9 @@ html, body, body * {
 }
 
 #tubular-container {
+
+	z-index: 0 !important;
+
 	opacity: 0;
 
     -webkit-transition: opacity 1500ms ease-out 1s;
@@ -93,4 +96,31 @@ html, body, body * {
 
 #tubular-container.show {
 	opacity: 1;
+}
+
+.title-container h1 {
+	font-size: 600%;
+	margin: 0;
+	line-height: 120%;
+	text-transform: uppercase;
+	font-family: 'GothamLight';
+}
+
+.form-container {
+	width: 100%;
+}
+
+button.button {
+	border: none;
+	padding: 0;
+}
+
+button.button span {
+	background-color: #00A99D;
+	color: #ffffff;
+	font-size: 100%;
+	text-transform: uppercase;
+	padding: 20px;
+	line-height: 230%;
+	font-family: 'GothamMedium';
 }
