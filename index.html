@@ -1,6 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" class="">
+<html xmlns="http://www.w3.org/1999/xhtml" class="js">
 <!-- 
 	Itinerants(tm) production
 	inhouse developing project for : Teaser page of Itinerants front website
@@ -28,7 +28,8 @@
 	<link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
 	<link type="text/css" rel="stylesheet" href="./css/style.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
+	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/modernizr.custom.39106.js"></script>
 	<script type="text/javascript" src="./js/jquery.tubular.1.0.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.js"></script>
@@ -44,17 +45,18 @@
 
 	<div class="bgtransparent"></div>
 	
-	<div class="container-fluid">
+	<div class="container-fluid height100">
 
-		<div class="row">
+		<div class="row height100">
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<div class="logo-container">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 height100">
+				<div class="logo-container height100">
 					<img src="./images/logo.png" />
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 height100">
+
 				<div class="title-container">
 					<h1>have you</h1>
 					<h1>ever lost</h1>
@@ -63,10 +65,15 @@
 				</div>
 
 				<div class="click-container">
-
 					<button class="button"><span>yes, i have</span></button>
+				</div>
+
+				<div class="form-container">
+					
+					<input type="text" placeholder="your email here">
 
 				</div>
+
 			</div>
 
 		</div>

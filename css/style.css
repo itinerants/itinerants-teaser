@@ -41,8 +41,11 @@ html, body, body * {
 }
 
 .container-fluid {
-	height: 100%;
 	padding: 5% 15px;
+}
+
+.height100 {
+	height: 100%;
 }
 
 .logo-container {
@@ -50,7 +53,11 @@ html, body, body * {
 }
 
 .logo-container img {
-	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	height: 60px;
+	top: 50%;
+	margin-top: -30px;
 }
 
 .bgbig {
@@ -107,7 +114,22 @@ html, body, body * {
 }
 
 .form-container {
-	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: auto;
+
+	display: none;
+}
+
+.form-container input {
+	background-color: #ffffff;
+	color: #ffffff;
+	font-size: 100%;
+	text-transform: lowercase;
+	padding: 0 30px;
+	line-height: 250%;
+	font-family: 'GothamLight';
+	border: none;
 }
 
 button.button {
@@ -115,12 +137,20 @@ button.button {
 	padding: 0;
 }
 
-button.button span {
+.click-container {
+	position: absolute;
+	bottom: 0;
+	width: auto;
+	height: auto;
+}
+
+.click-container button.button span {
 	background-color: #00A99D;
 	color: #ffffff;
 	font-size: 100%;
 	text-transform: uppercase;
-	padding: 20px;
-	line-height: 230%;
+	padding: 30px;
+	line-height: 250%;
 	font-family: 'GothamMedium';
 }
+
