@@ -40,6 +40,10 @@ html, body, body * {
  	font-family: 'GothamLight';
 }
 
+a, a *, a:hover, a:hover *, a:active, a:active * {
+	text-decoration: none;
+}
+
 .container-fluid {
 	padding: 5% 15px;
 }
@@ -71,6 +75,11 @@ html, body, body * {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-image: url(../images/bgbig.jpg);
+	z-index: 3;
+}
+
+.bgbig.nobg {
+	background-image: none;
 }
 
 .bgtransparent {
@@ -91,14 +100,19 @@ html, body, body * {
 
 #tubular-container {
 
-	z-index: 0 !important;
-
-	opacity: 0;
+	opacity: 1;
 
     -webkit-transition: opacity 1500ms ease-out 1s;
     -moz-transition: opacity 1500ms ease-out 1s;
     -o-transition: opacity 1500ms ease-out 1s;
     transition: opacity 1500ms ease-out 1s;
+
+	background-color: transparent;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(../images/bgbig.jpg);
+
 }
 
 #tubular-container.show {
@@ -115,42 +129,98 @@ html, body, body * {
 
 .form-container {
 	position: absolute;
-	bottom: 0;
+	/*bottom: 0;*/
+
+	margin: 50px 0 0;
+
 	height: auto;
 
-	display: none;
+}
+
+.form-container > * {
+	float: left;
+}
+
+.form-container * {
 }
 
 .form-container input {
 	background-color: #ffffff;
-	color: #ffffff;
+	color: #4f4f4f;
 	font-size: 100%;
 	text-transform: lowercase;
-	padding: 0 30px;
+	/*padding: 0 30px;*/
 	line-height: 250%;
 	font-family: 'GothamLight';
 	border: none;
+
+	width: 0;
+	padding: 0;
+
+	overflow: hidden;
+
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+
 }
 
-button.button {
+#form-container:target input {
+	width: 350px !important;
+	padding: 0 30px;
+}
+
+.form-container button.button span,
+.form-container button.submitbtn span {
+	background-color: #00A99D;
+	color: #ffffff;
+	font-size: 100%;
+	text-transform: uppercase;
+	padding: 0;
+	height: 35px;
+	line-height: 35px;
+	font-family: 'GothamMedium';
+	width: 160px;
+	position: absolute;
+	overflow: hidden;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+
+.form-container button.submitbtn span {
+	width: 0;
+}
+
+.form-container button.button span {
+	/*width: auto;*/
+    left: 0;
+}
+
+#form-container:target button.button span {
+	left: 150%;
+	width: 0;
+}
+
+#form-container:target button.submitbtn span {
+	width: 150px;
+}
+
+button.button,
+button.submitbtn {
 	border: none;
 	padding: 0;
 }
 
 .click-container {
 	position: absolute;
-	bottom: 0;
+	/*bottom: 0;*/
+
+	margin: 50px 0 0;
+
 	width: auto;
 	height: auto;
-}
-
-.click-container button.button span {
-	background-color: #00A99D;
-	color: #ffffff;
-	font-size: 100%;
-	text-transform: uppercase;
-	padding: 30px;
-	line-height: 250%;
-	font-family: 'GothamMedium';
 }
 

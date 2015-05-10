@@ -12,12 +12,15 @@
 $(document).ready(function(){
 
 	//$('.videoholder').show();
-	$('#videoholder').tubular({videoId: 'oarHXlGGnWU'});
+	$('#videoholder').tubular({videoId: 'ku8pHSjH9-s'});
 
 });
 
 $(window).load(function(){
 
-	$('#tubular-container').addClass('show');
+	setTimeout(function(){
+		//$('#tubular-container').addClass('show');
+		$('.bgbig').addClass('nobg');
+	}, 2500);
 
 });
